@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barış Can Gül</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+    main { width: 100%; max-width: 720px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    .subtitle { color: var(--accent); margin: 0 0 16px; font-weight: 600; }
+    p { line-height: 1.6; margin: 0; color: var(--muted); }
+    h2 { margin: 0 0 16px; font-size: 1.2rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td {
+      text-align: left;
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 600; }
+    td code { color: var(--accent); word-break: break-all; }
+    .note { margin-top: 16px; font-size: 0.85rem; }
+    @media (max-width: 520px) {
+      .card { padding: 20px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>Barış Can Gül</h1>
+      <p class="subtitle">Bilgisayar Mühendisliği Öğrencisi</p>
+      <p>
+        3. sınıf Bilgisayar Mühendisliği öğrencisiyim.
+        Necmettin Erbakan Üniversitesi'nde okuyorum.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>DNS Kayıtları</h2>
+      <table>
+        <thead>
+          <tr><th>Tür</th><th>Ad</th><th>Değer</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NS</td>
+            <td>barigul.dpdns.org</td>
+            <td><code>harvey.ns.cloudflare.com</code><br><code>rihana.ns.cloudflare.com</code></td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>barigul.dpdns.org</td>
+            <td>
+              <code>185.199.108.153</code><br>
+              <code>185.199.109.153</code><br>
+              <code>185.199.110.153</code><br>
+              <code>185.199.111.153</code>
+            </td>
+          </tr>
+          <tr>
+            <td>CNAME</td>
+            <td>www.barigul.dpdns.org</td>
+            <td><code>GITHUB_KULLANICI_ADI.github.io</code></td>
+          </tr>
+          <tr>
+            <td>MX</td>
+            <td>barigul.dpdns.org</td>
+            <td><code>MX_DEGERI_BURAYA</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">Bilgisayar Ağları dersi ödevi için hazırlanmıştır.</p>
+    </section>
+  </main>
+</body>
+</html>
